@@ -22,10 +22,10 @@ function returnFromFunc(func) {
   return func()
 }
 
-function modifyString(str,call) {
+function modifyString(str,func) {
   
 
-  return call(str)
+  return func(str)
 }
 
 function modifyNumber(num,func) {
@@ -42,7 +42,7 @@ function twoFuncs(func, func1) {
   return func1(result)
 }
 
-function twoValues(func,val,val1){
+function twoValues(val,val1, func){
   let result = func(val,val1)
   
   return result
