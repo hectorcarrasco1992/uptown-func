@@ -9,9 +9,12 @@ function callTwice(func) {
 }
 
 function callXTimes(func,num) {
+  let count = 0
+  count ++
+  while(count <= num){
   
-  
-  return call(func())
+  return func()
+  }
 
 }
 
@@ -39,8 +42,10 @@ function twoFuncs(func, func1) {
   return func1(result)
 }
 
-function twoValues(func,val,val1) {
-  return func(val,val1)
+function twoValues(func,val,val1){
+  let result = func(val,val1)
+  
+  return result
 }
 
 function twoValuesRTL() {
