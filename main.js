@@ -11,7 +11,7 @@ function callTwice(func) {
 function callXTimes(func,num) {
   
   
-  return func().length = num
+  return call(func())
 
 }
 
@@ -19,10 +19,10 @@ function returnFromFunc(func) {
   return func(func)
 }
 
-function modifyString(func) {
+function modifyString(str,call) {
   
 
-  return func('')
+  return call(str)
 }
 
 function modifyNumber(num,func) {
@@ -40,10 +40,7 @@ function twoFuncs(func, func1) {
 }
 
 function twoValues(func,val,val1) {
-  let result = func(val)
-  let result1 = func(val1)
-
-  return result + result1
+  return func(val,val1)
 }
 
 function twoValuesRTL() {
