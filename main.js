@@ -48,8 +48,8 @@ function twoValues(val,val1, func){
   return result
 }
 
-function twoValuesRTL(func,str,str1) {
-  return func(str,str1).length -1
+function twoValuesRTL(str1,str,func) {
+  return func(str,str1)
 
 }
 
